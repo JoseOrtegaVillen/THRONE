@@ -81,6 +81,7 @@ header nav a:hover {
     -o-border-radius: 20px;
 }
 header .nep{
+	background-image: -webkit-gradient(linear, left top, right top, from(gray) , to(white));
 	background-image: linear-gradient(to right, gray , white)
 }
 
@@ -160,7 +161,9 @@ content{
 .imagenes{
 	margin-left: 20px;
 }
-
+.imagenes:hover{
+	transform: scale(1.1);
+}
  .imagem1{
 	 flex-basis: 280px;
 	 height: 140px;
@@ -210,21 +213,27 @@ content{
 	background:#ffffff;
 	width: 100%;
 	padding:20px;
+	display: -webkit-box;
 	display: flex;
 	flex-wrap:nowrap;
-	justify-content:space-between;
+	-webkit-box-pack:justify;
+	        justify-content:space-between;
 }
 footer .derechos{
+	display: -webkit-box;
 	display: flex;
 	margin-left: 100px;
-	align-items:center;
+	-webkit-box-align:center;
+	        align-items:center;
 
 }
 
 footer .social{
+	display: -webkit-box;
 	display: flex;
 	margin-right: 100px;
-	align-items:center;
+	-webkit-box-align:center;
+	        align-items:center;
 }
 
 footer h2{
